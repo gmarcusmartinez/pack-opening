@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .card-container {
-    @apply h-[240px] w-[160px] cursor-pointer;
-  }
-  .card-front {
-    @apply grid h-full w-full absolute;
-  }
   .card-back {
     @apply h-full w-full;
   }
@@ -17,14 +11,26 @@
   }
 }
 
-.card-front {
-  grid-template-rows: 80% 20%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform: rotateY(180deg);
+.card-container {
+  cursor: pointer;
+  height: 240px;
+  width: 160px;
+  perspective: 1000px;
 }
 
 .card-back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.card-front {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
