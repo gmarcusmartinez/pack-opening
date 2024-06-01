@@ -16,11 +16,15 @@ export default function PackLayout({ cardIds }: Props) {
   const [bottom, setBottom] = useState<string[]>([])
   const largePack = 7
 
-  const { actions } = useContext(PackOpeningContext)!
+  const { state, actions } = useContext(PackOpeningContext)!
 
-  const topRow = top?.map((id: string) => <AnimatedCard key={id} />)
-  const middleRow = middle?.map((id: string) => <AnimatedCard key={id} />)
-  const bottomRow = bottom?.map((id: string) => <AnimatedCard key={id} />)
+  const topRow = top?.map((id: string) => <AnimatedCard key={id} id={id} />)
+  const middleRow = middle?.map((id: string) => (
+    <AnimatedCard key={id} id={id} />
+  ))
+  const bottomRow = bottom?.map((id: string) => (
+    <AnimatedCard key={id} id={id} />
+  ))
 
   const desktopList = (
     <div className="desktop-list">
@@ -29,6 +33,11 @@ export default function PackLayout({ cardIds }: Props) {
       {bottomRow && <div className="pack-row">{bottomRow}</div>}
     </div>
   )
+
+  useEffect(() => {
+    console.log(state.cards)
+  }, [state.cards])
+
   useEffect(() => {
     actions.setFlippedState(setInitialState(cardIds))
   }, [cardIds])

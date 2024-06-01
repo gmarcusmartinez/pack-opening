@@ -6,12 +6,11 @@ import { ICard } from "../../api/types"
 
 export default function HomePage() {
   const { pack } = useLoaderData() as HomeLoaderResult
-  const cardIds = pack.cards.map((card: ICard) => card.id)
 
   return (
     <div className="flex min-h-screen flex-col w-screen relative justify-center">
       <AbsoluteBg />
-      <PackLayout cardIds={cardIds} />
+      <PackLayout cardIds={pack.cards.map((card: ICard) => card.id)} />
     </div>
   )
 }

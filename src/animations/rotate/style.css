@@ -1,0 +1,8 @@
+.rotate-container {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  width: 100%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}

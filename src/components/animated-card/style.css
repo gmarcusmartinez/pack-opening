@@ -4,7 +4,7 @@
 
 @layer components {
   .card-container {
-    @apply h-[240px] w-[160px];
+    @apply h-[240px] w-[160px] cursor-pointer;
   }
   .card-front {
     @apply grid h-full w-full absolute;

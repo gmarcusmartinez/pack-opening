@@ -1,59 +1,59 @@
 {
   "packs": [
     {
-      "id": 1,
+      "id": "1",
       "cards": [
         {
-          "id:": 1,
+          "id": "1",
           "title": "Bulbasaur",
           "type": "Grass",
           "rarity": "Common",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
         },
         {
-          "id:": 2,
+          "id": "2",
           "title": "Ivysaur",
           "type": "Grass",
           "rarity": "Uncommon",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
         },
         {
-          "id:": 3,
+          "id": "3",
           "title": "Venusaur",
           "type": "Grass",
           "rarity": "Rare",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
         },
         {
-          "id:": 4,
+          "id": "4",
           "title": "Charmander",
           "type": "Fire",
           "rarity": "Common",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
         },
         {
-          "id:": 5,
+          "id": "5",
           "title": "Charmeleon",
           "type": "Fire",
           "rarity": "Uncommon",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
         },
         {
-          "id": 6,
+          "id": "6",
           "title": "Charizard",
           "type": "Fire",
           "rarity": "Rare",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
         },
         {
-          "id": 7,
+          "id": "7",
           "title": "Squirtle",
           "type": "Water",
           "rarity": "Common",
           "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
         },
         {
-          "id": 8,
+          "id": "8",
           "title": "Wartortle",
           "type": "Water",
           "rarity": "Uncommon",
