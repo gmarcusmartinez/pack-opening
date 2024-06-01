@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
 import HomePage from "./pages/home/HomePage"
 import Root from "./pages/Root"
+import { homeLoader } from "./pages/home/loader"
 
 export const router = createBrowserRouter([
   {
@@ -10,6 +11,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+        loader: homeLoader,
       },
     ],
   },
