@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-container {
+    @apply h-[240px] w-[160px];
+  }
+  .card-front {
+    @apply grid h-full w-full absolute;
+  }
+  .card-back {
+    @apply h-full w-full;
+  }
+  .card-back-img {
+    @apply h-full w-full object-cover;
+  }
+}
+
+.card-front {
+  grid-template-rows: 80% 20%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

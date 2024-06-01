@@ -4,6 +4,7 @@ import PackOpeningContext from "../../context/PackOpeningContext"
 import { chunk } from "../../utils/chunk"
 import "./style.css"
 import { setInitialState } from "../../utils/setInitialState"
+import AnimatedCard from "../animated-card/AnimatedCard"
 
 interface Props {
   cardIds: string[]
@@ -17,9 +18,9 @@ export default function PackLayout({ cardIds }: Props) {
 
   const { actions } = useContext(PackOpeningContext)!
 
-  const topRow = top?.map((id: string) => <div key={id}></div>)
-  const middleRow = middle?.map((id: string) => <div key={id}></div>)
-  const bottomRow = bottom?.map((id: string) => <div key={id}></div>)
+  const topRow = top?.map((id: string) => <AnimatedCard key={id} />)
+  const middleRow = middle?.map((id: string) => <AnimatedCard key={id} />)
+  const bottomRow = bottom?.map((id: string) => <AnimatedCard key={id} />)
 
   const desktopList = (
     <div className="desktop-list">
@@ -42,5 +43,5 @@ export default function PackLayout({ cardIds }: Props) {
     setBottom(chunks[1])
   }, [cardIds])
 
-  return <>{desktopList}</>
+  return <div className="">{desktopList}</div>
 }

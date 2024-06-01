@@ -4,9 +4,9 @@
 
 @layer components {
   .desktop-list {
-    @apply flex flex-col items-center mx-auto min-h-[calc(100vh-164px)] py-5;
+    @apply flex flex-col items-center mx-auto py-5;
   }
   .pack-row {
-    @apply flex justify-between;
+    @apply flex justify-between space-x-4;
   }
 }
