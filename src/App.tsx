@@ -1,12 +1,10 @@
 import "./App.css"
-import { AbsoluteBg } from "./components/absolute-bg/AbsoluteBg"
+
+import { RouterProvider } from "react-router-dom"
+import { router } from "./router"
 
 function App() {
-  return (
-    <div className="flex min-h-screen flex-col w-screen relative">
-      <AbsoluteBg />
-    </div>
-  )
+  return <RouterProvider router={router}></RouterProvider>
 }
 
 export default App
