@@ -2,21 +2,24 @@
 import { useContext, useEffect, useState } from "react"
 import PackOpeningContext from "../../context/PackOpeningContext"
 import { chunk } from "../../utils/chunk"
-import "./style.css"
 import { setInitialState } from "../../utils/setInitialState"
 import AnimatedCard from "../animated-card/AnimatedCard"
+import { IPack } from "../../api/types"
+import "./style.css"
+import FlipAllBtn from "../flip-all-btn/FlipAllBtn"
 
 interface Props {
-  cardIds: string[]
+  pack: IPack
+  ids: string[]
 }
 
-export default function PackLayout({ cardIds }: Props) {
+export default function PackLayout({ ids, pack }: Props) {
   const [top, setTop] = useState<string[]>([])
   const [middle, setMiddle] = useState<string[]>([])
   const [bottom, setBottom] = useState<string[]>([])
   const largePack = 7
 
-  const { state, actions } = useContext(PackOpeningContext)!
+  const { actions } = useContext(PackOpeningContext)!
 
   const topRow = top?.map((id: string) => <AnimatedCard key={id} id={id} />)
   const middleRow = middle?.map((id: string) => (
@@ -35,22 +38,23 @@ export default function PackLayout({ cardIds }: Props) {
   )
 
   useEffect(() => {
-    console.log(state.cards)
-  }, [state.cards])
+    actions.setPack(pack.cards)
+    actions.setFlippedState(setInitialState(ids))
+  }, [ids, pack.cards])
 
   useEffect(() => {
-    actions.setFlippedState(setInitialState(cardIds))
-  }, [cardIds])
-
-  useEffect(() => {
-    const chunkDivisor = cardIds.length >= largePack ? 3 : 2
-    const chunkSize = Math.ceil(cardIds.length / chunkDivisor)
-    const chunks = chunk(cardIds, chunkSize)
-
+    const chunkDivisor = ids.length >= largePack ? 3 : 2
+    const chunkSize = Math.ceil(ids.length / chunkDivisor)
+    const chunks = chunk(ids, chunkSize)
     setTop(chunks[0])
     setMiddle(chunks[2])
     setBottom(chunks[1])
-  }, [cardIds])
+  }, [ids])
 
-  return <div className="">{desktopList}</div>
+  return (
+    <div className="flex flex-col">
+      {desktopList}
+      <FlipAllBtn />
+    </div>
+  )
 }

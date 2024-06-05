@@ -1,0 +1,12 @@
+.flip-all-btn {
+  align-self: center;
+  background: linear-gradient(180deg, #ff9b00 0%, #ff5c00 100%);
+  border-radius: 5px;
+  color: #fff;
+  height: 45px;
+  margin: 10px;
+  width: 340px;
+}
+.flip-all-btn:hover {
+  filter: brightness(1.1);
+}

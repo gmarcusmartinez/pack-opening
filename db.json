@@ -5,127 +5,59 @@
       "cards": [
         {
           "id": "1",
-          "title": "Bulbasaur",
-          "type": "Grass",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+          "title": "Clawswirl",
+          "type": "water",
+          "rarity": "common",
+          "imgUrl": "/images/otter.png"
         },
         {
           "id": "2",
-          "title": "Ivysaur",
-          "type": "Grass",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+          "title": "Nebulion",
+          "type": "psychich",
+          "rarity": "uncommon",
+          "imgUrl": "/images/cat.png"
         },
         {
           "id": "3",
-          "title": "Venusaur",
-          "type": "Grass",
-          "rarity": "Rare",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+          "title": "Scavwing",
+          "type": "neutral",
+          "rarity": "rare",
+          "imgUrl": "/images/vulture.png"
         },
         {
           "id": "4",
-          "title": "Charmander",
-          "type": "Fire",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+          "title": "Toffee",
+          "type": "water",
+          "rarity": "common",
+          "imgUrl": "/images/capybara.png"
         },
         {
           "id": "5",
-          "title": "Charmeleon",
-          "type": "Fire",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+          "title": "Pyre",
+          "type": "fire",
+          "rarity": "common",
+          "imgUrl": "/images/dragon.png"
         },
         {
           "id": "6",
-          "title": "Charizard",
-          "type": "Fire",
-          "rarity": "Rare",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+          "title": "Tova",
+          "type": "grass",
+          "rarity": "common",
+          "imgUrl": "/images/alpaca.png"
         },
         {
           "id": "7",
-          "title": "Squirtle",
-          "type": "Water",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+          "title": "Flip-Flop",
+          "type": "water",
+          "rarity": "common",
+          "imgUrl": "/images/dolphin.png"
         },
         {
           "id": "8",
-          "title": "Wartortle",
-          "type": "Water",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "cards": [
-        {
-          "id": 9,
-          "title": "Blastoise",
-          "type": "Water",
-          "rarity": "Rare",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
-        },
-        {
-          "id": 10,
-          "title": "Caterpie",
-          "type": "Bug",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
-        },
-        {
-          "id": 11,
-          "title": "Metapod",
-          "type": "Bug",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png"
-        },
-        {
-          "id": 12,
-          "title": "Butterfree",
-          "type": "Bug",
-          "rarity": "Rare",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
-        },
-        {
-          "id": 13,
-          "title": "Weedle",
-          "type": "Bug",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png"
-        },
-        {
-          "id": 14,
-          "title": "Kakuna",
-          "type": "Bug",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png"
-        },
-        {
-          "id": 15,
-          "title": "Beedrill",
-          "type": "Bug",
-          "rarity": "Rare",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png"
-        },
-        {
-          "id": 16,
-          "title": "Pidgey",
-          "type": "Normal",
-          "rarity": "Common",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
-        },
-        {
-          "id": 17,
-          "title": "Pidgeotto",
-          "type": "Normal",
-          "rarity": "Uncommon",
-          "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png"
+          "title": "Muktip",
+          "type": "water",
+          "rarity": "uncommon",
+          "imgUrl": "/images/axolotl.png"
         }
       ]
     }

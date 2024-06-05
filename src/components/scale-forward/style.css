@@ -1,4 +1,7 @@
 .scale-forward {
   height: 100%;
   margin: 0 auto;
+  clip-path: polygon(50% 0%, 100% 18%, 100% 80%, 50% 100%, 0% 80%, 0% 18%);
+  object-fit: cover;
+  width: 88%;
 }

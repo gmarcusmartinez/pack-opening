@@ -8,5 +8,5 @@ export interface ICard {
   title: string
   type: string
   rarity: string
-  imageUrl: string
+  imgUrl: string
 }

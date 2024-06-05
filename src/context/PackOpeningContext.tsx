@@ -1,11 +1,14 @@
 import { createContext, FC, useReducer } from "react"
 import { ACTIONTYPE, CardFlippedState, IPackOpeningContext } from "./types"
+// import { ICard } from "../api/types"
 import _ from "lodash"
+import { ICard } from "../api/types"
 
 const initialState = {
   cards: {},
   isModalOpen: false,
   selectedCardId: "",
+  pack: [] as ICard[],
 }
 
 const packOpeningReducer = (state: typeof initialState, action: ACTIONTYPE) => {
@@ -22,6 +25,8 @@ const packOpeningReducer = (state: typeof initialState, action: ACTIONTYPE) => {
       return { ...state, selectedCardId: payload }
     case "SHOW_MODAL":
       return { ...state, isModalOpen: payload }
+    case "SET_PACK":
+      return { ...state, pack: payload }
     default:
       return state
   }
@@ -44,12 +49,14 @@ export const PackOpeningProvider: FC<Props> = ({ children }) => {
     dispatch({ type: "SET_SELECTED_CARD_ID", payload })
   const showModal = (payload: boolean) =>
     dispatch({ type: "SHOW_MODAL", payload })
+  const setPack = (payload: ICard[]) => dispatch({ type: "SET_PACK", payload })
 
   const actions = {
     flipCard,
     setFlippedState,
     showModal,
     setSelectedCardId,
+    setPack,
   }
 
   return (

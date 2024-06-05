@@ -9,6 +9,7 @@ import FireHex from "../../animations/fire-hex/FireHex"
 import swoosh from "../../assets/sounds/swoosh.mp4"
 import { useSoundEffect } from "../../hooks/useSoundEffect"
 import "./style.css"
+import { findCard } from "../../utils/findCard"
 
 interface Props {
   id: string
@@ -41,6 +42,8 @@ export default function AnimatedCard({ id }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [triggered, triggerSoundEffect])
 
+  const { imgUrl } = findCard(state.pack, id)
+
   return (
     <div className="card-container" onClick={handleFlip}>
       <Rotate id={id}>
@@ -48,7 +51,7 @@ export default function AnimatedCard({ id }: Props) {
           <HoverImg id={id}>
             <FireHex id={id} />
             <GlowPulse color={mapRarityToColor("uncommon")} id={id} />
-            <ScaleForward id={id} src="/public/images/card_back.png" />
+            <ScaleForward id={id} src={imgUrl} />
           </HoverImg>
           <div>hello</div>
         </div>
