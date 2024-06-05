@@ -5,8 +5,8 @@ import { chunk } from "../../utils/chunk"
 import { setInitialState } from "../../utils/setInitialState"
 import AnimatedCard from "../animated-card/AnimatedCard"
 import { IPack } from "../../api/types"
-import "./style.css"
 import FlipAllBtn from "../flip-all-btn/FlipAllBtn"
+import "./style.css"
 
 interface Props {
   pack: IPack

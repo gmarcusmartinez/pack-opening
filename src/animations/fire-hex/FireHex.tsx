@@ -3,16 +3,19 @@ import { useCallback, useContext, useEffect } from "react"
 import PackOpeningContext from "../../context/PackOpeningContext"
 import { createAnimation } from "@ionic/react"
 import "./style.css"
+import { findCard } from "../../utils/findCard"
+import { Rarity, mapRarityToHex } from "../../utils/mapRarityToColor"
 
 interface Props {
   id: string
 }
 
-const color = "rgb(58, 220, 255)"
-
 export default function FireHex({ id }: Props) {
   const { state } = useContext(PackOpeningContext)!
   const delay = state.cards[id] && state.cards[id].flipDelay
+
+  const { rarity } = findCard(state.pack, id)
+  const color = mapRarityToHex(rarity as Rarity)
 
   const TOP_KEY_FRAMES = [
     { offset: 0, borderLeft: `1px solid ${color}` },
@@ -83,7 +86,6 @@ export default function FireHex({ id }: Props) {
     void parent
       .delay(delay)
       .duration(800)
-      .iterations(Infinity)
       .iterations(1)
       .addAnimation([
         scale,

@@ -5,12 +5,17 @@ import "./style.css"
 
 export default function FlipAllBtn() {
   const { state, actions } = useContext(PackOpeningContext)!
+
   const handleClick = () =>
     actions.setFlippedState(setDelaySequence(Object.values(state.cards)))
 
+  const allFlipped = Object.values(state.cards).every(
+    (obj) => obj.flipped === true
+  )
+
   return (
     <button className="flip-all-btn" onClick={handleClick}>
-      Flip All
+      {allFlipped ? "Continue" : "Flip All"}
     </button>
   )
 }

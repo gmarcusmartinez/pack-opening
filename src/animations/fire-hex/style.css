@@ -26,7 +26,7 @@
 
 .fire-hex__tl {
   position: absolute;
-  height: 35%;
+  height: 38%;
   width: 100%;
   transform: rotate(60deg);
   top: 20%;
@@ -34,7 +34,7 @@
 
 .fire-hex__tr {
   position: absolute;
-  height: 35%;
+  height: 38%;
   width: 100%;
   transform: rotate(120deg);
   top: 20%;
@@ -42,7 +42,7 @@
 
 .fire-hex__bl {
   position: absolute;
-  height: 35%;
+  height: 38%;
   width: 100%;
   transform: rotate(120deg);
   bottom: 20%;
@@ -50,7 +50,7 @@
 
 .fire-hex__br {
   position: absolute;
-  height: 35%;
+  height: 38%;
   width: 100%;
   transform: rotate(60deg);
   bottom: 20%;

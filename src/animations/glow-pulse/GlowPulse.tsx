@@ -21,9 +21,9 @@ export default function GlowPulse({ id, color }: Props) {
       .delay(800)
       .duration(4000)
       .keyframes([
-        { offset: 0, height: "60%", width: "60%" },
-        { offset: 0.5, height: "80%", width: "80%" },
-        { offset: 1, height: "60%", width: "60%" },
+        { offset: 0, height: "80%", width: "80%" },
+        { offset: 0.5, height: "85%", width: "85%" },
+        { offset: 1, height: "80%", width: "80%" },
       ])
       .play()
   }, [animation, glow])

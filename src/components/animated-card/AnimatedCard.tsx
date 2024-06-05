@@ -3,7 +3,7 @@ import PackOpeningContext from "../../context/PackOpeningContext"
 import Rotate from "../../animations/rotate/Rotate"
 import HoverImg from "../../animations/hover-img/HoverImg"
 import GlowPulse from "../../animations/glow-pulse/GlowPulse"
-import { mapRarityToColor } from "../../utils/mapRarityToColor"
+import { Rarity, mapRarityToColor } from "../../utils/mapRarityToColor"
 import ScaleForward from "../scale-forward/ScaleForward"
 import FireHex from "../../animations/fire-hex/FireHex"
 import swoosh from "../../assets/sounds/swoosh.mp4"
@@ -42,7 +42,7 @@ export default function AnimatedCard({ id }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [triggered, triggerSoundEffect])
 
-  const { imgUrl } = findCard(state.pack, id)
+  const { imgUrl, rarity } = findCard(state.pack, id)
 
   return (
     <div className="card-container" onClick={handleFlip}>
@@ -50,7 +50,7 @@ export default function AnimatedCard({ id }: Props) {
         <div className="card-front">
           <HoverImg id={id}>
             <FireHex id={id} />
-            <GlowPulse color={mapRarityToColor("uncommon")} id={id} />
+            <GlowPulse color={mapRarityToColor(rarity as Rarity)} id={id} />
             <ScaleForward id={id} src={imgUrl} />
           </HoverImg>
           <div>hello</div>

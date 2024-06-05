@@ -8,56 +8,64 @@
           "title": "Clawswirl",
           "type": "water",
           "rarity": "common",
-          "imgUrl": "/images/otter.png"
+          "imgUrl": "/images/otter.png",
+          "mint": "102"
         },
         {
           "id": "2",
           "title": "Nebulion",
           "type": "psychich",
           "rarity": "uncommon",
-          "imgUrl": "/images/cat.png"
+          "imgUrl": "/images/cat.png",
+          "mint": "84"
         },
         {
           "id": "3",
           "title": "Scavwing",
           "type": "neutral",
           "rarity": "rare",
-          "imgUrl": "/images/vulture.png"
+          "imgUrl": "/images/vulture.png",
+          "mint": "23"
         },
         {
           "id": "4",
           "title": "Toffee",
           "type": "water",
           "rarity": "common",
-          "imgUrl": "/images/capybara.png"
+          "imgUrl": "/images/capybara.png",
+          "mint": "264"
         },
         {
           "id": "5",
           "title": "Pyre",
           "type": "fire",
-          "rarity": "common",
-          "imgUrl": "/images/dragon.png"
+          "rarity": "uncommon",
+          "imgUrl": "/images/dragon.png",
+          "mint": "46"
         },
         {
           "id": "6",
           "title": "Tova",
           "type": "grass",
           "rarity": "common",
-          "imgUrl": "/images/alpaca.png"
+          "imgUrl": "/images/alpaca.png",
+          "mint": "91"
         },
         {
           "id": "7",
           "title": "Flip-Flop",
           "type": "water",
           "rarity": "common",
-          "imgUrl": "/images/dolphin.png"
+          "imgUrl": "/images/dolphin.png",
+          "mint": "38"
         },
         {
           "id": "8",
           "title": "Muktip",
           "type": "water",
           "rarity": "uncommon",
-          "imgUrl": "/images/axolotl.png"
+          "imgUrl": "/images/axolotl.png",
+          "mint": "14"
         }
       ]
     }
