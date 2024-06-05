@@ -20,7 +20,6 @@ export default function GlowPulse({ id, color }: Props) {
       .addElement(glow)
       .delay(800)
       .duration(4000)
-      .iterations(Infinity)
       .keyframes([
         { offset: 0, height: "60%", width: "60%" },
         { offset: 0.5, height: "80%", width: "80%" },

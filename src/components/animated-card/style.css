@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .card-back {
-    @apply h-full w-full;
-  }
   .card-back-img {
     @apply h-full w-full object-cover;
   }
